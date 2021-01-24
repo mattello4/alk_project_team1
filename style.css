@@ -121,6 +121,36 @@ display: inline-block;
   padding-bottom: 1rem;
 }
 
+.btn {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+  box-shadow: 5px 5px 5px rgba(118, 118, 118, 0.3);
+}
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-right: 25px;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
 /* Course */
 #cours {
   background-color: lightgrey;
@@ -197,11 +227,22 @@ footer .footer a:hover, footer p, footer h3 {
     width: 50%;
     max-width: 30vw;
   }
+
+  .btn {
+    display: block;
+    max-width: 70%;
+    margin: 10px auto;
+  }
 }
 
 @media all and (min-width: 768px) and (max-width: 991px) {
   .client {
     width: 70%;
+  }
+  .btn {
+    display: block;
+    max-width: 50%;
+    margin: 15px auto;
   }
 }
 
