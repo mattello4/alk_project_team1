@@ -33,9 +33,71 @@ body {
   transition: all .2s 0s ease-in;
 }
 
+.fancy-button {
+  position: relative;
+  color: #fff;
+  border: 1px solid;
+  margin: 5px;
+  padding: 10px 25px;
+  text-decoration: none;
+  outline: none;
+  line-height: 100%;
+  overflow: hidden;
+  height: 40px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.fancy-button:hover {
+  text-decoration: none;
+}
+.fancy-button .icon {
+  float: right;
+}
+.fancy-button.icon{
+display: inline-block;
+}
+.fancy-button:active .icon,
+.fancy-button:focus .icon {
+  -webkit-transform: scale(0.75);
+  -moz-transform: scale(0.75);
+  -o-transform: scale(0.75);
+  transform: scale(0.75);
+}
+.medium {
+  padding: 10px 25px;
+  font-size: 1.15em;
+}
+.rounded {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+}
+.pumpkin {
+  background-color: #d35400;
+}
+.pumpkin:hover {
+  color: #d35400;
+  background-color: #fff;
+}
+.shrink {
+  -webkit-transition: all 0.35s ease;
+  -moz-transition: all 0.35s ease;
+  -o-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.shrink:hover {
+  -webkit-animation: shrink 0.15s forwards linear;
+  -moz-animation: shrink 0.15s forwards linear;
+  -o-animation: shrink 0.15s forwards linear;
+  animation: shrink 0.15s forwards linear;
+}
+
 /* Landing */
 .home-inner{
-  background-image: url("img/computers.png");
+  background-image: url("img/logo-1.png");
   background-size: contain;
 }
 
