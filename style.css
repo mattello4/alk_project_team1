@@ -1,0 +1,198 @@
+
+/* General Rules */
+body {
+  overflow-x: hidden;
+  background-color: lightgrey;
+  font-family:'Courier New', Courier, monospace
+}
+/* Navigation */
+.navbar {
+  text-transform: uppercase;
+  font-size: .9rem;
+  background-color:black;
+  letter-spacing: .1rem;
+  font-weight: bold;
+}
+
+.navbar-brand>img{
+  height: 1.8rem;
+}
+
+.navbar-nav .nav-item {
+  padding-right: 0.6rem;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #fff;
+  padding-top: .6rem;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: lime;
+  transform: scale(1.25);
+  transition: all .2s 0s ease-in;
+}
+
+/* Landing */
+.home-inner{
+  background-image: url("img/computers.png");
+  background-size: contain;
+}
+
+.caption {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 40%;
+  color:#fff;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.caption h1 {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  letter-spacing: .1rem;
+}
+
+.caption h3 {
+  padding-bottom: 1rem;
+}
+
+/* Course */
+#cours {
+  background-color: lightgrey;
+}
+
+/* Feature */
+
+.jumbotron {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+  color: #000;
+}
+
+.features-list {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+#features .line {
+  margin-bottom: 0;
+}
+
+/* Resources */
+
+#resources .resource h3 {
+  text-decoration: underline;
+}
+
+#resources .resource{
+  border: 1px dashed darkgrey;
+  border-radius: 3px;
+  padding: .5rem;
+}
+
+/* Clients */
+
+.client {
+  max-width: 90%;
+  border-radius: 50%;
+}
+
+.blockquote p{
+  max-width: 70%;
+  font-size: .7em;
+  font-style: italic;
+  color: #565656;
+  margin: 0 auto;
+}
+
+/* Contact */
+#contact footer {
+  border: 2px dashed darkgrey;
+}
+
+footer .footer a {
+  color:#fff;
+  text-decoration: none;
+}
+
+footer img {
+  height: 1.8rem;
+  margin: .5rem 0;
+}
+
+footer .footer a:hover, footer p, footer h3 {
+  color: #000;
+}
+
+/* Own media queries */
+
+@media all and (max-width: 767px){
+  .client {
+    width: 50%;
+    max-width: 30vw;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .client {
+    width: 70%;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .client {
+    max-width: 15vw;
+  }
+}
+
+/*============= SECTION =============*/
+/* 
+.narrow {
+  width: 75%;
+  margin: 1.5rem auto;
+  padding-top: 2rem;
+}
+.narrow h1 {
+    font-size: 2.4rem;
+  }
+.btn-secondary {
+  border-width: medium;
+  border-radius: 0;
+  padding: .6rem 1.2rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 1rem;
+  border-color: #1EBBA3;
+  background-color: #1EBBA3;
+  color: white;
+}
+.btn-secondary:hover,
+.btn-secondary:focus {
+  border-color: #189582;
+  background-color: #189582;
+  color: white;
+} */
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
