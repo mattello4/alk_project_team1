@@ -71,21 +71,22 @@ body {
 
 /* Feature */
 
-.jumbotron {
-  margin-bottom: 0;
-  padding-bottom: 0;
-  padding-top: 0;
-  color: #000;
+#features .features h3 {
+  text-decoration: underline;
 }
 
-.features-list {
-  list-style: none;
-  margin-bottom: 0;
+#features .features {
+  border: 1px dashed darkgrey;
+  border-radius: 3px;
+  padding: .5rem;
 }
 
-#features .line {
-  margin-bottom: 0;
+
+.features img {
+  width: 100px;
+  height: 100px;
 }
+
 
 /* Resources */
 
@@ -97,6 +98,11 @@ body {
   border: 1px dashed darkgrey;
   border-radius: 3px;
   padding: .5rem;
+}
+
+.resource img {
+  width: 100px;
+  height: 100px;
 }
 
 /* Clients */
