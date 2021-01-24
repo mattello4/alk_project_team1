@@ -38,9 +38,72 @@ body {
   transition: all .2s 0s ease-in;
 }
 
+.fancy-button {
+  position: relative;
+  color: #fff;
+  border: 1px solid;
+  margin: 5px;
+  padding: 10px 25px;
+  text-decoration: none;
+  outline: none;
+  line-height: 100%;
+  overflow: hidden;
+  height: 40px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.fancy-button:hover {
+  text-decoration: none;
+}
+.fancy-button .icon {
+  float: right;
+}
+.fancy-button.icon{
+display: inline-block;
+}
+.fancy-button:active .icon,
+.fancy-button:focus .icon {
+  -webkit-transform: scale(0.75);
+  -moz-transform: scale(0.75);
+  -o-transform: scale(0.75);
+  transform: scale(0.75);
+}
+.medium {
+  padding: 10px 25px;
+  font-size: 1.15em;
+}
+.rounded {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+}
+.pumpkin {
+  background-color: #d35400;
+}
+.pumpkin:hover {
+  color: #d35400;
+  background-color: #fff;
+}
+.shrink {
+  -webkit-transition: all 0.35s ease;
+  -moz-transition: all 0.35s ease;
+  -o-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.shrink:hover {
+  -webkit-animation: shrink 0.15s forwards linear;
+  -moz-animation: shrink 0.15s forwards linear;
+  -o-animation: shrink 0.15s forwards linear;
+  animation: shrink 0.15s forwards linear;
+}
+
 /* Landing */
-.home-inner {
-  background-image: url("img/computers.png");
+
+.home-inner{
+  background-image: url("img/logo-1.png");
   background-size: contain;
 }
 
@@ -62,6 +125,36 @@ body {
 
 .caption h3 {
   padding-bottom: 1rem;
+}
+
+.btn {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+  box-shadow: 5px 5px 5px rgba(118, 118, 118, 0.3);
+}
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-right: 25px;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 /* Course */
@@ -151,11 +244,22 @@ footer img {
     width: 50%;
     max-width: 30vw;
   }
+
+  .btn {
+    display: block;
+    max-width: 70%;
+    margin: 10px auto;
+  }
 }
 
 @media all and (min-width: 768px) and (max-width: 991px) {
   .client {
     width: 70%;
+  }
+  .btn {
+    display: block;
+    max-width: 50%;
+    margin: 15px auto;
   }
 }
 
