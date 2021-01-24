@@ -1,21 +1,21 @@
-
 /* General Rules */
 body {
   overflow-x: hidden;
   background-color: lightgrey;
-  font-family:'Courier New', Courier, monospace
+  font-family: 'Courier New', Courier, monospace
 }
+
 /* Navigation */
 .navbar {
   text-transform: uppercase;
   font-size: .9rem;
-  background-color:black;
+  background-color: black;
   letter-spacing: .1rem;
   font-weight: bold;
 }
 
-.navbar-brand>img{
-  height: 1.8rem;
+.navbar-brand>img {
+  height: 3.0rem;
 }
 
 .navbar-nav .nav-item {
@@ -34,7 +34,7 @@ body {
 }
 
 /* Landing */
-.home-inner{
+.home-inner {
   background-image: url("img/computers.png");
   background-size: contain;
 }
@@ -44,7 +44,7 @@ body {
   max-width: 100%;
   position: absolute;
   top: 40%;
-  color:#fff;
+  color: #fff;
   text-transform: uppercase;
   z-index: 1;
 }
@@ -88,7 +88,7 @@ body {
   text-decoration: underline;
 }
 
-#resources .resource{
+#resources .resource {
   border: 1px dashed darkgrey;
   border-radius: 3px;
   padding: .5rem;
@@ -101,7 +101,7 @@ body {
   border-radius: 50%;
 }
 
-.blockquote p{
+.blockquote p {
   max-width: 70%;
   font-size: .7em;
   font-style: italic;
@@ -115,22 +115,27 @@ body {
 }
 
 footer .footer a {
-  color:#fff;
+  color: #fff;
   text-decoration: none;
 }
 
 footer img {
-  height: 1.8rem;
+  height: 3.0rem;
   margin: .5rem 0;
 }
 
-footer .footer a:hover, footer p, footer h3 {
-  color: #000;
+.fa-youtube-square:hover {
+  color: #c4302b;
 }
+
+.fa-instagram:hover {
+  color: #405de6
+}
+
 
 /* Own media queries */
 
-@media all and (max-width: 767px){
+@media all and (max-width: 767px) {
   .client {
     width: 50%;
     max-width: 30vw;
