@@ -213,6 +213,13 @@ display: inline-block;
   margin: 0 auto;
 }
 
+img {
+  transition: all 1s ease-in-out
+}
+img:hover {
+  transform: scale(1.1) 
+}
+
 /* Contact */
 #contact footer {
   border: 2px dashed darkgrey;
